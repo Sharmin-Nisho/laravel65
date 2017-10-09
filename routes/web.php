@@ -12,4 +12,13 @@
 */
 
 Route::get('/', 'WelcomeController@index');
+Route::get('/category', 'WelcomeController@category');
+Route::gey('/dashboard/', 'WelcomeController@dashboard');
+Route::get('/add-category/', 'WelcomeController@addCategory');
+Route::get('/manage-category/', 'WelcomeController@manageCategory');
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
 
